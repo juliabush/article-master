@@ -101,15 +101,21 @@ main {
 .card__text {
     background-color: white;
     padding: 2rem;
+    padding-bottom: 1rem;
 }
 .card__social-media {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 1.5rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-top: 0;
+    padding-top: 1rem;
     border-bottom-left-radius: .7rem;
     border-bottom-right-radius: .7rem;
+    max-width: 340px;
+    position: relative;
+}
+.heya {
+    background-color: var(--clr-VerydarkGrayishBlue);
 }
 .social-media__main-flex {
     display: flex;
@@ -130,4 +136,26 @@ main {
     border-radius: 50%;
     border: transparent;
     background-color: var(--clr-LightGrayishblue);
+    cursor: pointer;
+}
+.hidden {
+    visibility: hidden;
+}
+.dark-icons {
+    visibility: hidden;
+    z-index: 5;
+    position: absolute;
+    top: 26px;
+    display: flex;
+    gap: 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: white;
+}
+.dark-icons.active {
+    visibility: visible;
+}
+.dark-text {
+    opacity: 0.7;
 }
