@@ -159,3 +159,28 @@ main {
 .dark-text {
     opacity: 0.7;
 }
+@media (min-width:800px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1.4fr;
+        max-width: 700px;
+    }
+    .card__social-media {
+        max-width: none;
+    }
+    .drawers__image {
+        height: 100%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: .7rem;
+    }
+    .card__main-image {
+        height: 100%;
+        object-fit: cover;
+    }
+    .card__text {
+        border-top-right-radius: .7rem;
+    }
+    .heya {
+        border-bottom-left-radius: 0;
+    }
+}
