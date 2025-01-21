@@ -43,13 +43,7 @@
     overflow-wrap: break-word;
   }
   
-  /* 8. Improve line wrapping */
-  p {
-    text-wrap: pretty;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    text-wrap: balance;
-  }
+
   
   /*
     9. Create a root stacking context
@@ -60,4 +54,80 @@
 
 html {
     height: 100%;
+    background-color: var(--clr-LightGrayishblue) ;
+}
+body {
+    height: 100%;
+    display: grid;
+    place-content: center;
+}
+main {
+    margin: 1.5rem;
+    font-size: var(--ff-size);
+    font-family: var(--ff-main);
+    max-width: 340px;
+    box-shadow: 0px 2px 8px rgba(54, 54, 124, 0.233);
+    border-radius: .7rem;
+}
+.title {
+    font-weight: var(--fw-bold);
+    color: var(--clr-VerydarkGrayishBlue);
+}
+.card__article-main {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.card__article-description {
+    font-size: 0.9rem;
+    word-spacing: 1px;
+}
+.social-media__mame {
+    font-size: 0.8rem;
+    letter-spacing: .5px;
+}
+.muted {
+   color: var(--clr-DesaturatedDarkBlue);
+   font-weight: var(--fw-mid);
+}
+.social-media__date {
+    color: var(--clr-GrayishBlue);
+}
+.drawers__image {
+   height: 210px;
+   overflow: hidden;
+   border-top-left-radius: .7rem;
+   border-top-right-radius: .7rem;
+}
+.card__text {
+    background-color: white;
+    padding: 2rem;
+}
+.card__social-media {
+    background-color: white;
+    padding: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0;
+    border-bottom-left-radius: .7rem;
+    border-bottom-right-radius: .7rem;
+}
+.social-media__main-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.social-media__left-flex {
+    display: flex;
+    gap: 1rem;
+}
+.social-media__avatar {
+    width: 40px;
+    border-radius: 50%;
+}
+.social-media__share-button {
+    width: 40px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    border: transparent;
+    background-color: var(--clr-LightGrayishblue);
 }
